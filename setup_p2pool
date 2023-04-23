@@ -1,0 +1,15 @@
+sudo apt install git build-essential cmake libuv1-dev libzmq3-dev libsodium-dev libpgm-dev libnorm-dev libgss-dev libcurl4-openssl-dev libidn2-0-dev
+
+
+git clone --recursive https://github.com/SChernykh/p2pool
+mv p2pool p2pool.git
+mkdir p2pool.git/build
+cd p2pool.git/build
+cmake ..
+make -j$(noproc)
+
+cd ../..
+mv p2pool.git/build/p2pool ./p2pool
+rm -rf p2pool.git
+
+echo "P2Pool has been successfully downloaded!"

@@ -1,0 +1,11 @@
+wget https://downloads.getmonero.org/cli/linux64
+mkdir monero
+tar -xjvf linux64 -C monero
+rm linux64
+
+echo "Download completed!"
+echo "Now you node needs to be synchronized."
+echo "Run the following to synchronize the node:"
+echo "./monero/monerod"
+echo "Or if you want a pruned blockchain node:"
+echo "./monero/monerod --prune-blockchain"
