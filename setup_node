@@ -1,7 +1,9 @@
 wget https://downloads.getmonero.org/cli/linux64
-mkdir monero
-tar -xjvf linux64 -C monero
+mkdir /tmp/monero monero
+tar -xjvf linux64 -C /tmp/monero
+cp /tmp/monero/*/* ./monero/
 rm linux64
+rm -rf /tmp/monero
 
 echo "Download completed!"
 echo "Now you node needs to be synchronized."
