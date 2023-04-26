@@ -6,7 +6,7 @@ rm linux64
 rm -rf /tmp/monero
 
 echo "Download completed!"
-echo "Now you node needs to be synchronized."
+echo "Now your node needs to be synchronized."
 echo "Run the following to synchronize the node:"
 echo "./monero/monerod"
 echo "Or if you want a pruned blockchain node:"
