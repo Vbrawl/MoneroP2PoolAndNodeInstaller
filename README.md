@@ -43,22 +43,24 @@ p2pool --host 127.0.0.1 --wallet <YOUR_WALLET_ADDRESS>
 ```
 
 
-# NOT TESTED - THE PROJECT IS STILL INCOMPLETE
-
-
-## Uninstall monero and the node
+# Uninstall monero and the node
 ```
-chmod +x purge_node
 ./purge_node
 ```
 
 monero and the node are now removed from the system.
 
 
-## Uninstall p2pool
+# Uninstall p2pool
 ```
-chmod +x purge_p2pool
 ./purge_p2pool
 ```
 
 P2Pool is now removed!
+
+Now you can choose wether you want to uninstall p2pool's dependencies
+
+In order to remove all dependencies from your system you may run the following command:
+```
+sudo apt remove --purge git build-essential cmake libuv1-dev libzmq3-dev libsodium-dev libpgm-dev libnorm-dev libgss-dev libcurl4-openssl-dev libidn2-0-dev
+```
