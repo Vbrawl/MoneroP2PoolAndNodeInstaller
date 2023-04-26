@@ -1,4 +1,4 @@
-rm -rf ~/bitmonero
+rm -rf ~/.bitmonero
 rm -rf monero
 
 echo "Monero node has been successfully uninstalled!"
